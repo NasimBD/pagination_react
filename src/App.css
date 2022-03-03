@@ -117,10 +117,9 @@ h5{
         flex-flow: column nowrap;
     }
     
-.post-title{
-    text-align: center;
-}
-    
+    .post-title, .post-body{
+        text-align: center;
+    }    
   }
   
   /* ----------------------------- 2 */
@@ -133,9 +132,11 @@ h5{
         flex-flow: column nowrap;
     }
       
-    .post-title{
+    .post-title, .post-body{
         text-align: center;
     }
+      
+      
   }
   /* ----------------------------- 3 */
   @media screen and (min-width:769px){
