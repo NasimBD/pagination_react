@@ -15,6 +15,7 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    outline: 10px solid red;
 }
 
 header{
