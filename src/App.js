@@ -17,11 +17,6 @@ function App() {
   const CURRENT_POSTS = posts && posts.slice(IndexOfFirstPost, IndexOfLastPost);
   const TotalPosts = posts.length;
 
-  // Ref. 
-  // const IndexOfLastPost = currentPage * postsPerPage;
-  // const IndexOfFirstPost = IndexOfFirstPost - postsPerPage;
-
-
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -60,11 +55,8 @@ function App() {
         setPostsPerPage={setPostsPerPage}
         />
       </div>
-      
-      
     </div>
-    
-  );
+    );
 }
 
 export default App;
