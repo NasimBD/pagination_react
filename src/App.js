@@ -32,7 +32,9 @@ function App() {
   const paginate = (pageNum) => setCurrentPage(pageNum);
 
   if(loading){
-    return <img src={LoadingGif} alt="Loading..."/> 
+    return <div id="loading">
+       <img src={LoadingGif} alt="Loading..."/>
+      </div> 
   }
 
   return (
