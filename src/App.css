@@ -134,9 +134,7 @@ h5{
       
     .post-title, .post-body{
         text-align: center;
-    }
-      
-      
+    }      
   }
   /* ----------------------------- 3 */
   @media screen and (min-width:769px){
@@ -157,5 +155,4 @@ h5{
         flex: 1 1 80%;
         padding-left: 2rem;
     }
-    
   }
