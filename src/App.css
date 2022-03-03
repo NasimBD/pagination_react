@@ -9,6 +9,12 @@ body{
     background-color: rgb(25, 31, 38);
 }
 
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 header{
     background-color: rgb(40, 226, 240);
     padding: 3rem;
@@ -70,7 +76,6 @@ h5{
     height: 2.2rem;
     line-height: 2.2rem;
     text-align: center;
-    /* padding: 0.3rem 0.4rem; */
     background-color: rgb(134, 240, 240);
     color: rgb(31, 30, 30);
     border-radius: 2px;
