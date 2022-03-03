@@ -47,7 +47,6 @@ ul{
 
 .post-title, h5{
     text-transform: capitalize;
-    font-style: cursive;
     color: rgb(110, 143, 151);
     line-height: 1.5;
     font-weight: 600;
