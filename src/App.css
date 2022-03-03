@@ -1,0 +1,154 @@
+body, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial Narrow','Franklin Gothic Medium',  Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(25, 31, 38);
+}
+
+header{
+    background-color: rgb(40, 226, 240);
+    padding: 3rem;
+    text-align: center;
+    color: rgb(82, 81, 81);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+#main{
+    color: white;
+    padding: 2rem 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+#posts{
+    margin-bottom: 2rem;
+}
+
+#posts li{
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.post-title, h5{
+    text-transform: capitalize;
+    font-style: cursive;
+    color: rgb(110, 143, 151);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h5{
+    text-align: center;
+    color: white;
+}
+
+.post-body{
+    line-height: 1.5;
+}
+
+#pagination{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-top: solid 1px rgba(134, 240, 240, 0.116);
+    padding-top: 0.7rem;
+}
+
+
+#pagination li{
+    cursor: pointer;
+    margin-right: 0.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    /* padding: 0.3rem 0.4rem; */
+    background-color: rgb(134, 240, 240);
+    color: rgb(31, 30, 30);
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+#pagination li:hover{
+    font-weight: 900;
+}
+
+#pagination li.active{
+    background-color: rgb(15, 78, 78);
+    color: white
+}
+
+#postsPerPageWrapper{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#postsPerPageWrapper label{
+    padding: 0.3rem;
+}
+
+#postsPerPageWrapper select{
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+/* ----------------------------- media */
+/* ----------------------------- 1 */
+@media screen and (max-width:576px){
+    html{
+      font-size: 13px;
+    }
+  
+    #posts li{
+        flex-flow: column nowrap;
+    }
+    
+.post-title{
+    text-align: center;
+}
+    
+  }
+  
+  /* ----------------------------- 2 */
+  @media screen and (min-width:576px) and (max-width:769px){
+    html{
+      font-size: 15px;
+    }
+
+    #posts li{
+        flex-flow: column nowrap;
+    }
+      
+    .post-title{
+        text-align: center;
+    }
+  }
+  /* ----------------------------- 3 */
+  @media screen and (min-width:769px){
+    html{
+      font-size: 16px;
+    }
+    #posts li{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .post-title{
+        flex: 1 1 20%;
+    }
+
+    .post-body{
+        flex: 1 1 80%;
+        padding-left: 2rem;
+    }
+    
+  }
